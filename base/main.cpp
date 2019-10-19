@@ -71,10 +71,15 @@ int main () {
 
 		}
 		
-		shortReport.close();
-		alphaReport.close();
-		fullReport.close();
 		delete[] arrayOfStudents; 
+		
+		outputFileShortReport.close();
+		
+		outputFileAlphaReport.close();
+		
+		outputFileFullReport.close();
+		
+
 
 
 	}
