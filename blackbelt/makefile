@@ -13,8 +13,11 @@ address.o: address.cpp
 student.o: student.cpp
 	g++ student.cpp -c
 
+valgrind:
+	valgrind ./StudentParserBlackBelt
+
 clean:
-	rm *.o
+	rm *.o fullReport.txt shortReport.txt alphaReport.txt StudentParserBlackBelt
 
 run: StudentParserBlackBelt
 	./StudentParserBlackBelt
