@@ -119,12 +119,22 @@ int main () {
 			outputFileFullReport << arrayOfStudents[x].getStudentInfo() << std::endl << std::endl;
 
 		}
+		
+		
+		delete[] arrayOfStudents; 
+		
+		outputFileShortReport.close();
+		
+		outputFileAlphaReport.close();
+		
+		outputFileFullReport.close();
 
 
 
 	}
 
-
+	
+	return 0;
 
 
 }
