@@ -7,7 +7,12 @@
 
 //function prototypes
 bool is_digit(const char value) { return std::isdigit(value); }
-bool is_numeric(const std::string& value) { return all_of(value.begin(), value.end(), is_digit); }
+bool is_numeric(const std::string& s)
+{
+    std::string::const_iterator it = s.begin();
+    while (it != s.end() && std::isdigit(*it)) ++it;
+    return !s.empty() && it == s.end();
+}
 
 #include "student.h"
 
