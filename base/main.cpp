@@ -70,13 +70,17 @@ int main () {
 			outputFileFullReport << arrayOfStudents[x].getStudentInfo() << std::endl << std::endl;
 
 		}
-
+		
+		shortReport.close();
+		alphaReport.close();
+		fullReport.close();
+		delete[] arrayOfStudents; 
 
 
 	}
 
 
-
+	return 0;
 
 }
 
