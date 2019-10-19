@@ -17,6 +17,7 @@ class Address {
 		std::string getCity();
 		std::string getState();
 		std::string getZipCode();
+		std::string getWholeAdressToString();
 
 		//setters
 		void setStreet_1(std::string);
@@ -26,6 +27,8 @@ class Address {
 		void setZipCode(std::string);
 		
 
+
+		void toStringCOut();
 
 
 
