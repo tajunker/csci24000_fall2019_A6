@@ -7,6 +7,10 @@
 
 //function prototypes
 bool is_digit(const char value) { return std::isdigit(value); }
+
+//the following only compiles on c++11 as required 
+//bool is_numeric(const std::string& value) { return all_of(value.begin(), value.end(), is_digit); }
+
 bool is_numeric(const std::string& s) {
     std::string::const_iterator it = s.begin();
     while (it != s.end() && std::isdigit(*it)) ++it;
